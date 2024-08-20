@@ -1,6 +1,7 @@
-# Joan Ricardo Roa
+# Joan Ricardo Roa Mora 👋👋👋
 
-![Profile Banner](#) <!-- Placeholder for profile banner image -->
+![Welcome](https://github.com/user-attachments/assets/1621b542-7e09-4e53-9de6-6b3fdda5c5b6)
+
 
 ## 🇺🇸 About Me
 
