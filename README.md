@@ -1,6 +1,7 @@
 # Joan Ricardo Roa Mora 👋👋👋
 
-![Welcome](https://github.com/user-attachments/assets/1621b542-7e09-4e53-9de6-6b3fdda5c5b6)
+![Welcome (1)](https://github.com/user-attachments/assets/0bea85be-af64-49d4-b5e3-2044283cc4ab)
+
 
 
 ## 🇺🇸 About Me
@@ -65,9 +66,14 @@ I hold a degree in Software Development from a prestigious university in Colombi
 
 ### 🌐 GitHub Stats
 
-![Joan's GitHub Stats](#) <!-- Placeholder for GitHub stats image -->
-![Top Languages](#) <!-- Placeholder for top languages image -->
-![Contributions](#) <!-- Placeholder for contributions image -->
+### 📊 GitHub Statistics
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=joanroamora&show_icons=true&theme=radical)
+
+### 💻 Top Languages
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=joanroamora&layout=compact&theme=radical)
+
+### 🚀 Contributions Overview
+![Contributions](https://github-readme-streak-stats.herokuapp.com/?user=joanroamora&theme=radical)
 
 ---
 
