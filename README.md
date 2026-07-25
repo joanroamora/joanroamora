@@ -1,4 +1,4 @@
-```markdown
+
 # Hi there! 👋 I'm Joan Ricardo Roa Mora
 
 ### 🚀 DevOps Engineer | Cloud-Native & Infrastructure Automation Specialist
@@ -42,5 +42,3 @@ Here are some of my most representative projects showcasing cloud architecture, 
 
 ---
 *Feel free to explore my repositories or reach out via [LinkedIn](https://www.linkedin.com/in/jrroam/) to collaborate on cloud and DevOps challenges!*
-
-```
