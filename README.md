@@ -1,6 +1,6 @@
 <div align="center">
 
-  <h1>Joan Roa Mora</h1>
+  <h1>Joan Ricardo Roa Mora</h1>
   <h3>DevOps Engineer | Cloud & Infrastructure Specialist</h3>
 
   <p>📍 <strong>Houston, Texas, USA</strong></p>
