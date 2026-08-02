@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joan Ricardo Roa Mora | DevOps & Cloud Specialist</title>
+    <meta name="description" content="Portfolio and professional profile of Joan Ricardo Roa Mora - DevOps Engineer, SRE, Cloud & AI Specialist based in Houston, Texas.">
+    <!-- Google Fonts for Clean Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --surface-color: #161b22;
+            --surface-border: #30363d;
+            --text-primary: #e6edf3;
+            --text-secondary: #8b949e;
+            --accent: #58a6ff;
+            --accent-glow: rgba(88, 166, 255, 0.15);
+            --transition: all 0.25s ease;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding: 0 1rem;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 840px;
+            margin: 0 auto;
+            padding: 4rem 0;
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+            border-bottom: 1px solid var(--surface-border);
+            padding-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5srem;
+            color: var(--text-primary);
+        }
+
+        .subtitle {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 1rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--surface-color);
+            color: var(--text-primary);
+            border: 1px solid var(--surface-border);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn:hover {
+            background-color: var(--surface-border);
+            border-color: var(--text-secondary);
+            transform: translateY(-1px);
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 4rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1.25rem;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* Tech Stack Minimalist Tags */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .skill-category h3 {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.75rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--surface-border);
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            color: var(--text-primary);
+        }
+
+        /* Project Slots (Replicable Architecture) */
+        .projects-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--surface-color);
+            border: 1px solid var(--surface-border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 20px var(--accent-glow);
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .project-title a {
+            color: var(--text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .project-title a:hover {
+            color: var(--accent);
+        }
+
+        .project-desc {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            border-top: 1px solid var(--surface-border);
+            padding: 2rem 0;
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .container { padding: 2rem 1rem; }
+            h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <header>
+            <h1>Joan Ricardo Roa Mora</h1>
+            <div class="subtitle">DevOps Engineer | SRE | Cloud & AI Specialist</div>
+            <div class="location">📍 Houston, Texas, USA</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/jrroam/" class="btn" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://github.com/joanroamora" class="btn" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </header>
+
+        <!-- Professional Summary -->
+        <section>
+            <h2>About</h2>
+            <p>
+                Site Reliability and DevOps Engineer experienced in building and maintaining scalable cloud platforms across AWS, GCP, and Azure. Dedicated to optimizing operational reliability, automating infrastructure, and streamlining CI/CD workflows to enable efficient software delivery. Currently pursuing a Master of Computer Information Systems with a specialization in Artificial Intelligence at Indiana Wesleyan University.
+            </p>
+        </section>
+
+        <!-- Core Tech Stack -->
+        <section>
+            <h2>Core Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Cloud & Containers</h3>
+                    <div class="tags">
+                        <span class="tag">AWS</span>
+                        <span class="tag">GCP</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">K3s</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">ECS / EKS</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>IaC & Automation</h3>
+                    <div class="tags">
+                        <span class="tag">Terraform (Certified)</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">Jenkins</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Observability (LGTM)</h3>
+                    <div class="tags">
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Loki</span>
+                        <span class="tag">Tempo</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Languages & AI</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PyTorch</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects (Replicable Slots Architecture) -->
+        <section>
+            <h2>Featured Projects</h2>
+            <div class="projects-list">
+
+                <!-- SLOT 1: GridFlow-TX -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/joanroamora/gridflow-tx" target="_blank" rel="noopener">
+                                GridFlow-TX ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">Analytics and monitoring platform for Texas electrical grid (ERCOT) data and battery storage systems (BESS), equipped with real-time metrics and full LGTM stack tracing.</p>
+                    <div class="project-tech">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Prometheus/Grafana</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+
+                <!-- SLOT 2: pdfRoar -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/joanroamora/pdfroar" target="_blank" rel="noopener">
+                                pdfRoar ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">Microservices ecosystem designed for high-performance PDF processing (editing, merging, splitting, and text extraction), deployed on K3s and Docker clusters.</p>
+                    <div class="project-tech">
+                        <span class="tag">K3s</span>
+                        <span class="tag">Ansible</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">LGTM Stack</span>
+                    </div>
+                </article>
+
+                <!-- SLOT 3: RealStateAgentic -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/joanroamora/RealStateAgentic-Feature1-FirstApproachInfraConfig" target="_blank" rel="noopener">
+                                RealStateAgentic ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">AI-powered real estate ecosystem backed by secure, resilient AWS infrastructure provisioned via Terraform on ECS Fargate inside isolated VPCs.</p>
+                    <div class="project-tech">
+                        <span class="tag">AWS ECS Fargate</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+
+                <!-- SLOT 4: LexShield -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/joanroamora/lexshield" target="_blank" rel="noopener">
+                                LexShield ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">Automated security and open-source license compliance auditing tool embedded directly in CI/CD pipelines to prevent legal technical debt before production.</p>
+                    <div class="project-tech">
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Docker (DooD)</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+
+                <!-- SLOT 5: F1Genetics -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="https://github.com/joanroamora/f1genetics" target="_blank" rel="noopener">
+                                F1Genetics ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">Autonomous racing simulation framework merging Genetic Algorithms and Neural Networks to train driving agents over thousands of evolved generations.</p>
+                    <div class="project-tech">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Neural Networks</span>
+                        <span class="tag">GitHub Actions</span>
+                    </div>
+                </article>
+
+                <!-- ========================================================
+                     TEMPLATE DE NUEVO SLOT (COPIA Y PEGA PARA AGREGAR PROYECTOS)
+                     ========================================================
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">
+                            <a href="URL_DEL_REPOSITORIO" target="_blank" rel="noopener">
+                                Nombre del Proyecto ↗
+                            </a>
+                        </h3>
+                    </div>
+                    <p class="project-desc">Descripción breve y directa del propósito del proyecto y su arquitectura.</p>
+                    <div class="project-tech">
+                        <span class="tag">Tecnología 1</span>
+                        <span class="tag">Tecnología 2</span>
+                    </div>
+                </article>
+                ======================================================== -->
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; <span id="year"></span> Joan Ricardo Roa Mora. Built with minimal design principles.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Automatic Year update
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
