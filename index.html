@@ -282,6 +282,7 @@
             display: flex;
             gap: 0.75rem;
             margin-bottom: 1.25rem;
+            flex-wrap: wrap;
         }
 
         .project-link {
@@ -399,12 +400,31 @@
             </div>
         </section>
 
-        <!-- Featured Projects with Integrated Links -->
+        <!-- Featured Projects Portfolio Collection -->
         <section>
             <h2>Featured Projects</h2>
             <div class="projects-list">
 
-                <!-- SLOT 1: pdfRoar -->
+                <!-- 1. GridFlow-TX -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">GridFlow-TX</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://joanroamora.github.io/gridflow-tx-portfolio/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
+                        <a href="https://github.com/joanroamora/gridflow-tx" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                    <p class="project-desc">Analytics and monitoring platform for the Texas electrical grid (ERCOT) data and battery storage systems (BESS). Includes real-time metrics, alerts, and complete system monitoring with Prometheus, Grafana, Loki, and Tempo.</p>
+                    <div class="project-tech">
+                        <span class="tag">AWS</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Prometheus</span>
+                        <span class="tag">Grafana</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+
+                <!-- 2. pdfRoar -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">pdfRoar</h3>
@@ -413,51 +433,67 @@
                         <a href="https://joanroamora.github.io/pdfRoar/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
                         <a href="https://github.com/joanroamora/pdfRoar" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗[cite: 1]</a>
                     </div>
-                    <p class="project-desc">Microservices ecosystem designed for high-performance PDF processing (editing, merging, splitting, and text extraction), deployed on K3s and Docker clusters[cite: 1].</p>
+                    <p class="project-desc">Microservices platform for processing PDF files (editing, merging, splitting, and text extraction). Deployed on K3s Kubernetes and Docker clusters, configured with Ansible, and monitored with the LGTM stack[cite: 1].</p>
                     <div class="project-tech">
                         <span class="tag">K3s</span>
+                        <span class="tag">Docker</span>
                         <span class="tag">Ansible</span>
-                        <span class="tag">Terraform</span>
                         <span class="tag">LGTM Stack</span>
                     </div>
                 </article>
 
-                <!-- SLOT 2: GridFlow-TX -->
+                <!-- 3. RealStateAgentic -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">GridFlow-TX</h3>
+                        <h3 class="project-title">RealStateAgentic</h3>
                     </div>
                     <div class="project-links">
-                        <a href="https://joanroamora.github.io/gridflow-tx-portfolio/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
-                        <a href="https://github.com/joanroamora/gridflow-tx-portfolio" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                        <a href="https://github.com/joanroamora/RealStateAgentic-Feature1-FirstApproachInfraConfig" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
                     </div>
-                    <p class="project-desc">Analytics and monitoring platform for Texas electrical grid (ERCOT) data and battery storage systems (BESS), equipped with real-time metrics and full LGTM stack tracing.</p>
+                    <p class="project-desc">AI-powered platform for real estate management. Infrastructure provisioned using Terraform on AWS ECS Fargate inside secure VPCs and automated with Ansible.</p>
                     <div class="project-tech">
-                        <span class="tag">AWS</span>
-                        <span class="tag">Docker</span>
-                        <span class="tag">Prometheus/Grafana</span>
+                        <span class="tag">AWS ECS Fargate</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Ansible</span>
                         <span class="tag">Python</span>
                     </div>
                 </article>
 
-                <!-- SLOT 3: Workshop One (1.6) -->
+                <!-- 4. youTubeProject -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">Workshop One (1.6)</h3>
+                        <h3 class="project-title">youTubeProject</h3>
                     </div>
                     <div class="project-links">
-                        <a href="https://joanroamora.github.io/workshop_One_1.6/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
-                        <a href="https://github.com/joanroamora/workshop_One_1.6" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                        <a href="https://github.com/joanroamora/youTubeProject-Feature3Building" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
                     </div>
-                    <p class="project-desc">Interactive portfolio workshop artifact tracking core cloud integration practices, change management strategies, and structured documentation.</p>
+                    <p class="project-desc">Automated workflow pipeline for content processing and web scraping. Features dynamic proxy rotation, task queues, and automated cloud setup with Terraform.</p>
                     <div class="project-tech">
-                        <span class="tag">Portfolio</span>
-                        <span class="tag">Documentation</span>
-                        <span class="tag">AI Ethics</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Python</span>
                     </div>
                 </article>
 
-                <!-- SLOT 4: Operationalizing Fairness AI -->
+                <!-- 5. Open-Claw Test -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Open-Claw Test</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/joanroamora/open-clawtest" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                    <p class="project-desc">Multi-tier application deployment on AWS. Uses reusable Terraform modules for VPC networking, RDS databases, ElastiCache, ALB, and S3, configured with Ansible.</p>
+                    <div class="project-tech">
+                        <span class="tag">AWS (VPC/RDS/S3)</span>
+                        <span class="tag">Terraform</span>
+                        <span class="tag">Ansible</span>
+                    </div>
+                </article>
+
+                <!-- 6. Operationalizing Fairness AI -->
                 <article class="project-card">
                     <div class="project-header">
                         <h3 class="project-title">Operationalizing Fairness AI</h3>
@@ -466,32 +502,80 @@
                         <a href="https://joanroamora.github.io/operationalizing-fairness-ai/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
                         <a href="https://github.com/joanroamora/operationalizing-fairness-ai" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
                     </div>
-                    <p class="project-desc">Framework and unit testing suite designed to evaluate, audit, and systematically reduce biases in machine learning pipelines and models.</p>
+                    <p class="project-desc">Framework and unit testing suite to evaluate and reduce bias in machine learning models, featuring automated tests to check model fairness and ensure ethical AI deployment.</p>
                     <div class="project-tech">
                         <span class="tag">Python</span>
                         <span class="tag">Scikit-learn</span>
-                        <span class="tag">Ethics & Testing</span>
+                        <span class="tag">Automated Testing</span>
                     </div>
                 </article>
 
-                <!-- ========================================================
-                     TEMPLATE DE NUEVO SLOT (COPIA Y PEGA PARA AGREGAR PROYECTOS)
-                     ========================================================
+                <!-- 7. VideoForge RunPod -->
                 <article class="project-card">
                     <div class="project-header">
-                        <h3 class="project-title">Nombre del Proyecto</h3>
+                        <h3 class="project-title">VideoForge RunPod</h3>
                     </div>
                     <div class="project-links">
-                        <a href="URL_LIVE_PAGE" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
-                        <a href="URL_GITHUB" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                        <a href="https://github.com/joanroamora/videoforge-runpod" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
                     </div>
-                    <p class="project-desc">Descripción breve y directa del propósito del proyecto y su arquitectura.</p>
+                    <p class="project-desc">Backend infrastructure for AI video generation optimized for Wan2.1 video workflows using cloud GPUs on RunPod.</p>
                     <div class="project-tech">
-                        <span class="tag">Tecnología 1</span>
-                        <span class="tag">Tecnología 2</span>
+                        <span class="tag">RunPod GPUs</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Wan2.1</span>
+                        <span class="tag">Docker</span>
                     </div>
                 </article>
-                ======================================================== -->
+
+                <!-- 8. F1Genetics -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">F1Genetics</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/joanroamora/f1genetics" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                    <p class="project-desc">Autonomous racing simulation powered by AI. Combines genetic algorithms and neural networks to train cars on F1 racetracks.</p>
+                    <div class="project-tech">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Neural Networks</span>
+                        <span class="tag">Genetic Algorithms</span>
+                    </div>
+                </article>
+
+                <!-- 9. LexShield -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">LexShield</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/joanroamora/lexshield" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                    <p class="project-desc">Security and legal compliance auditing tool. Containerized application with continuous integration pipelines powered by Jenkins.</p>
+                    <div class="project-tech">
+                        <span class="tag">Jenkins</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">Python</span>
+                    </div>
+                </article>
+
+                <!-- 10. Workshop One (1.6) -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Workshop One (1.6)</h3>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://joanroamora.github.io/workshop_One_1.6/" class="project-link" target="_blank" rel="noopener">Live Page ↗</a>
+                        <a href="https://github.com/joanroamora/workshop_One_1.6" class="project-link" target="_blank" rel="noopener">GitHub Repo ↗</a>
+                    </div>
+                    <p class="project-desc">Interactive academic portfolio workshop milestone covering cloud competencies, leadership strategies, and structured artifact presentation.</p>
+                    <div class="project-tech">
+                        <span class="tag">Portfolio</span>
+                        <span class="tag">Documentation</span>
+                        <span class="tag">Leadership</span>
+                    </div>
+                </article>
 
             </div>
         </section>
